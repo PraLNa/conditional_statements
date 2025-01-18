@@ -1,14 +1,17 @@
-# Напишите программу, которая определяет наименьшее из двух чисел.?
+# Напишите программу, которая определяет наименьшее из четырёх чисел.
 
-a = int(input())
-b = int(input())
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+num4 = int(input())
 
-if a < b:
-    print(a)
-elif a > b:
-    print(b)
-else:
-    print("Оба числа равны")
+min_num = num1
 
+if num2 < min_num:
+    min_num = num2
+if num3 < min_num:
+    min_num = num3
+if num4 < min_num:
+    min_num = num4
 
-
+print(min_num)

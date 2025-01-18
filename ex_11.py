@@ -7,3 +7,11 @@
 # Введите количество секунд: 3661
 # Пример вывода:
 # 1:1:1
+
+seconds = int(input("Введите количество секунд: "))
+
+hours = seconds // 3600  # 1 час = 3600 секунд
+minutes = (seconds % 3600) // 60  # Остаток секунд делим на 60 для получения минут
+remaining_seconds = seconds % 60  # Остаток секунд
+
+print(f"{hours}:{minutes}:{remaining_seconds}")
